@@ -38,6 +38,8 @@ applications:
         base_memory: 128
         memory_ratio: 180
 
+    disk: 1024
+    
     hooks:
         build: |
             set -x -e
