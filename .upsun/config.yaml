@@ -62,19 +62,19 @@ applications:
 
     relationships:
         database: "database:mysql"
-        rediscache: "rediscache:redis"
-        rabbitmqqueue: "rabbitmqqueue:rabbitmq"
+        #rediscache: "rediscache:redis"
+        #rabbitmqqueue: "rabbitmqqueue:rabbitmq"
 
 # Services
 services:
     database:
         type: mariadb:11.0
 
-    rediscache:
-        type: redis:7.2
+    #rediscache:
+    #    type: redis:7.2
     
-    rabbitmqqueue:
-        type: rabbitmq:3.12
+    #rabbitmqqueue:
+    #    type: rabbitmq:3.12
 
 # Routes
 routes:
