@@ -61,14 +61,14 @@ applications:
                 start: symfony console --time-limit=3600 --memory-limit=64M messenger:consume async
 
     relationships:
-        database: "database:mysql"
+        database: "database:postgresql"
         rediscache: "rediscache:redis"
         #rabbitmqqueue: "rabbitmqqueue:rabbitmq"
 
 # Services
 services:
     database:
-        type: mariadb:11.0
+        type: postgresql:16
 
     rediscache:
         type: redis:7.2
